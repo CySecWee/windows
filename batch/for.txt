@@ -1,0 +1,12 @@
+FOR /L %%variable IN (lowerlimit,Increment,Upperlimit) DO do_something
+
+The /L iterating through ranges.
+
+%% Variable - declare any variables to use within the loop. 
+
+IN : contain 3 values. (Lowerlimit, increment, upperlimit)
+
+do_something : code block to be executed for each iteration.
+
+@ECHO OFF 
+FOR /L %%X IN (0,1,5) DO ECHO %%X
